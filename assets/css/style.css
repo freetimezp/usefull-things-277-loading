@@ -9,3 +9,76 @@
 a {
     text-decoration: none;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    overflow: hidden;
+}
+
+h1 {
+    display: block;
+    overflow: hidden;
+}
+
+.loader-wrap {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+    z-index: 5;
+}
+
+.loader-wrap .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 100%;
+    opacity: 0;
+}
+
+.loader-wrap .head span {
+    font-size: 120px;
+    text-transform: uppercase;
+    z-index: 20;
+    color: #e0e0e0;
+    font-weight: lighter;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.container span {
+    font-size: 100px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transform: skewX(30deg) scale(2);
+    text-transform: uppercase;
+    font-weight: lighter;
+    opacity: 0;
+}
